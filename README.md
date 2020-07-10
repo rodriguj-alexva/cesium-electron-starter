@@ -1,17 +1,17 @@
 # cesium-electron-starter
-CesiumJS on Electron getting starter repo
+Demo of CesiumJS on Electron, 2020.
 
 ## Using
 
 ### Clone
-        $ git clone https://github.com/emadehsan/cesium-electron-starter
+        $ git clone https://github.com/rodriguj-alexva/cesium-electron-starter
         
 ### Install Packages
         $ cd cesium-electron-starter
         $ npm install
         
 ### Run Electron App
-        $ ./node_modules/.bin/electron .
+        $ npm start
     
     
 ## Useful links
