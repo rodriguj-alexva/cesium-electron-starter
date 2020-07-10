@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval'; connect-src  'self' https://api.cesium.com https://*.virtualearth.net; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.virtualearth.net; img-src data:* " >
   <title>My Cesium App</title>
   <script src="./node_modules/cesium/Build/Cesium/Cesium.js"></script>
   <style>
@@ -15,6 +16,8 @@
 <body>
   <div id="cesiumContainer"></div>
   <script>
+	console.log('creating Cesium viewer');
+
     var viewer = new Cesium.Viewer('cesiumContainer');
   </script>
 </body>
