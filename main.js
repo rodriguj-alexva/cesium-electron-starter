@@ -14,10 +14,18 @@ var mainWindow = null;
 // initialization and is ready to create browser windows.
 app.on('ready', function() {
     // Create the browser window
-    mainWindow = new BrowserWindow({width: 900, height: 600});
+    mainWindow = new BrowserWindow({
+		width: 900, 
+		height: 600,
+		webPreferences: {
+			nodeIntegration: true, 
+			enableRemoteModule: true 
+		}
+	});
 
     // and load the index.html of the app.
     mainWindow.loadURL('file://' + __dirname + '/index.html');
+
 
     // Returned when the window is closed.
     mainWindow.on('closed', function() {
